@@ -1,9 +1,10 @@
 {
-  "name": "namaste-react",
+  "name": "food-app",
   "version": "1.0.0",
-  "description": "learning react",
+  "description": "food delivering app",
   "main": "app.js",
   "scripts": {
+    "start": "parcel index.html",
     "test": "jest"
   },
   "repository": {
@@ -12,7 +13,8 @@
   },
   "keywords": [
     "react",
-    "dom"
+    "dom",
+    "food"
   ],
   "author": "Kartik Pandey",
   "license": "ISC",
@@ -21,6 +23,11 @@
   },
   "homepage": "https://github.com/KartikPandey19/Namaste-React#readme",
   "devDependencies": {
-    "parcel": "^2.10.3"
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

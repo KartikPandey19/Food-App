@@ -1,15 +1,30 @@
-//const header = React.createElement("h1", { id: "heading" }, "hello");
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-
-
-const multi = React.createElement("div", { id: "parent" }, 
-[React.createElement("div", { id: "child" }, 
-[React.createElement("h1", { id: "heading"}, "hello i am from react"),React.createElement("h2", { id: "heading2"}, "hello i am from react h2")]),
-React.createElement("div", { id: "child2" }, 
-[React.createElement("h1", { id: "heading3"}, "hello i am from react child2"),React.createElement("h2", { id: "heading4"}, "hello i am from react h2 child2")])
-]
-)
-
-const id = ReactDOM.createRoot(document.getElementById("root"));
-
-id.render(multi);
+const Header = () => {
+    return (
+      <div className="header">
+        <div className="logo-container">
+          <img className="logo" src="https://www.creativefabrica.com/wp-content/uploads/2020/02/10/Food-Logo-Graphics-1-12.jpg"></img>
+        </div>
+        <div className="nav-items">
+          <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Cart</li>
+          </ul>
+        </div>
+      </div>
+    );
+  };
+  
+  const AppLayout = () => {
+    return (
+    <div className="app">
+      <Header/>
+    </div>
+    );
+  };
+  
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<AppLayout />);
